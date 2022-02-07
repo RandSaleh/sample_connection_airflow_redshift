@@ -8,7 +8,7 @@ from airflow.operators.postgres_operator import PostgresOperator
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 
-def load_data_from_redshift(*args,**kwargs):
+def load_data_from_redshift():
     hook = AwsBaseHook(client_type='secretsmanager',aws_conn_id="aws_credentials")
     test= hook.get_conn()
     logging.info(f"test ... {test}")
