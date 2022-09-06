@@ -1,7 +1,7 @@
 # sample_connection_airflow_redshift
 Steps : 
 creating Redshift aws cluster with open TCP/IP traffic : 
-- create security group 
+- create security group :
 1.AWS Concole >> EC2 >> From the left hand view [Network & Security] >> security group 
 2.create new security group [redshift_security_group]
 3. Add inbound rule 
@@ -13,12 +13,12 @@ Tusted entity type is : AWS Sevice
 Use case : Redshift : customizable
 2.Add Permissions policies : Allow S3 access. 
 
--  Create Redshift cluster
+-  Create Redshift cluster :
 1. attach IAM Role 
 2. allow public accessability 
 3. add security group [redshift_security_group] 
 
-- create airflow-redshift connection 
+- create airflow-redshift connection :
 1. airflow concole >> Admin >> Connection >> new Connection 
 name "redshift"
 Connection Type : Postgres, install it via : pip install apache-airflow-providers-postgres[amazon]
