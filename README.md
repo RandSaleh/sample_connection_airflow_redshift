@@ -25,7 +25,7 @@ Connection Type : Postgres, install it via : pip install apache-airflow-provider
 Host : copy endpoint for the cluster withut the port and the schema name. 
 schama : dev 
 port : 5439
-login : is username/password for your user [that have admin accessability].
+login : is username/password for the redshift like awsurs .
 
 3. create conenctios on airflow for aws credentials : 
 Airflow console >> admin >> conenctions >>craete  aws credentials 
